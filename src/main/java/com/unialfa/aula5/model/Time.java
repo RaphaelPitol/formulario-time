@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Comentario {
+public class Time {
 
     private String time;
     @EqualsAndHashCode.Include

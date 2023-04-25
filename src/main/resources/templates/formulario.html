@@ -21,24 +21,24 @@
         que são identificadas através do name
         -->
         <div class="mb-3">
-            <input name="id" th:value="${comentario.id}" type="hidden">
+            <input name="id" th:value="${time.id}" type="hidden">
             <label for="tituloComentarioId" class="form-label">Time</label>
 
             <input type="text" class="form-control" id="tituloComentarioId"
-                   name="time" th:value="${comentario.time}" required="true">
+                   name="time" th:value="${time.time}" required="true">
 
             <label for="textoComentarioId" class="form-label">Estado</label>
             <input type="text" class="form-control" id="textoComentarioId"
-                   name="estado" th:value="${comentario.estado}" required="true">
+                   name="estado" th:value="${time.estado}" required="true">
 
 
             <label for="linkComentarioId" class="form-label">Ano de Fundação</label>
             <input type="text" class="form-control" id="linkComentarioId"
-                   name="anoFundacao" th:value="${comentario.anoFundacao}">
+                   name="anoFundacao" th:value="${time.anoFundacao}">
 
             <label for="titulos" class="form-label">Titulos</label>
             <input type="text" class="form-control" id="titulos"
-                   name="titulos" th:value="${comentario.titulos}">
+                   name="titulos" th:value="${time.titulos}">
         </div>
         <hr>
         <div class="col-auto">

@@ -25,15 +25,15 @@
                     <th scope="col">Remover</th>
                 </tr>
                 </thead>
-                <form th:each="comentario : ${comentarios}" class="border border-success p-2 mb-2">
-                <input name="id" th:value="${comentario.id}" type="hidden">
+                <form th:each="time : ${times}" class="border border-success p-2 mb-2">
+                <input name="id" th:value="${time.id}" type="hidden">
                 <tr>
 
-                    <td th:text="${comentario.id}"></td>
-                    <td th:text="${comentario.time}"></td>
-                    <td th:text="${comentario.estado}"></td>
-                    <td th:text="${comentario.anoFundacao}"></td>
-                    <td th:text="${comentario.titulos}"></td>
+                    <td th:text="${time.id}"></td>
+                    <td th:text="${time.time}"></td>
+                    <td th:text="${time.estado}"></td>
+                    <td th:text="${time.anoFundacao}"></td>
+                    <td th:text="${time.titulos}"></td>
                     <td><button type="submit" formaction="alterar" formmethod="post" class="btn btn-warning">
                         Alterar
                     </button></td>
